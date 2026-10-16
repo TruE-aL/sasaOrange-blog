@@ -16,40 +16,43 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	// 主页
 	links.push(LinkPresets.Home);
 
-	// 音乐及其子菜单
+	// 文章及其子菜单
 	links.push({
-		name: "音乐",
+		name: "文章",
 		url: "#",
-		icon: "material-symbols:music-note-rounded",
+		icon: "material-symbols:article",
 		children: [
-			// 归档（作品编年）
+			// 归档
 			LinkPresets.Archive,
-
-			// 系列（专辑 / 企划）
-			LinkPresets.Series,
 
 			// 分类
 			LinkPresets.Categories,
 
 			// 标签
 			LinkPresets.Tags,
+
+			// 系列
+			LinkPresets.Series,
 		],
 	});
 
-	// 文字及其子菜单
+	// 我的及其子菜单
 	links.push({
-		name: "文字",
+		name: "我的",
 		url: "#",
-		icon: "material-symbols:menu-book-rounded",
+		icon: "material-symbols:person",
 		children: [
 			// 动态
 			LinkPresets.Dynamic,
 
+			// 项目
+			LinkPresets.Projects,
+
 			// 相册
 			LinkPresets.Gallery,
 
-			// 项目
-			LinkPresets.Projects,
+			// 书签导航
+			LinkPresets.Booknav,
 		],
 	});
 
