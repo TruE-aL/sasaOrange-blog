@@ -154,7 +154,8 @@ export function getBannerVisibilityState(
 		isBackgroundEnabled;
 	const dimOpacity = backgroundWallpaper.common?.dimOpacity ?? 0.15;
 	const dimOpacityDark =
-		backgroundWallpaper.common?.dimOpacityDark ?? Math.min(1, dimOpacity + 0.15);
+		backgroundWallpaper.common?.dimOpacityDark ??
+		Math.min(1, dimOpacity + 0.15);
 
 	const showBannerPageTitle =
 		(isBannerMode || isWallpaperSwitchable || isClassicFullscreenMode) &&
